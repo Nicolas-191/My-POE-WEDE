@@ -1,0 +1,288 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #3e2723;
+    background-color: #fff8f0;
+}
+
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 2.5rem; 
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    color: #4e342e;
+    margin-bottom: 1rem;
+}
+h2 {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: #5d4037;
+    margin: 1.5rem 0 1rem 0;
+}
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    margin-bottom: 1em;
+}
+
+
+header {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #4e342e;
+    padding: 1rem 5%; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+}
+
+header img {
+    border: 3px solid #fff8f0;
+    border-radius: 50%;
+    background-color: white;
+    max-width: 100%; 
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff8f0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+nav a:hover {
+    background-color: #ffcc80;
+    color: #3e2723;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+nav a:focus {
+    outline: 2px solid #ffcc80;
+}
+nav a:active {
+    background-color: #ffab40;
+}
+
+
+main {
+    display: grid;
+    gap: 2rem;
+    width: 90%; 
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid #efebe9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+main section {
+    padding: 1.5rem;
+    background-color: #fffaf5;
+    border-radius: 8px;
+    border-left: 4px solid #8d6e63;
+}
+
+footer {
+    background-color: #3e2723;
+    color: #fff8f0;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8em; /* em */
+    margin: 0.5em 0;
+    border: 1px solid #bcaaa4;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #5d4037;
+    color: white;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+button:hover {
+    background-color: #8d6e63;
+}
+
+
+@media screen and (max-width: 768px) {
+   
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    main {
+        width: 95%;
+        padding: 1rem;
+        grid-template-columns: 1fr; 
+    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+}
+
+@media screen and (max-width: 480px) {
+    body { font-size: 14px; }
+    nav a {
+        display: block;
+        width: 100%;
+    }
+    main {
+        margin: 1rem auto;
+    }
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px !important;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
+  
+  main h2, 
+  section h2 {
+    font-size: 20px !important;
+    letter-spacing: 1px;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+  /* OUR STORY etc */
+  .about-text h3, 
+  .story h3 {
+    font-size: 15px !important;
+  }
+  /* Make body text also a bit smaller so it fits */
+  p {
+    font-size: 14px !important;
+    line-height: 1.5;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+
+  
+  header {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    padding: 10px !important;
+    width: 100% !important;
+  }
+
+  header nav ul {
+    flex-direction: column !important;
+    gap: 8px !important;
+    padding: 0;
+    width: 100%;
+  }
+
+  header nav ul li {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr !important;
+    padding: 10px !important;
+    width: 100% !important;
+  }
+
+  .service-card {
+    width: 100% !important;
+    margin: 0 auto 15px auto !important;
+  }
+
+  .service-card img {
+    height: auto !important;
+  }
+
+  /* Main content */
+  main {
+    padding: 10px !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .services,
+  .service-container,
+  .services-grid,
+  .services-wrapper,
+  .service-list {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto auto !important;
+  }
+
+  .services > div,
+  .service-container > div,
+  .service-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
