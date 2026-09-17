@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Jo's Bakery</title>
+    <link rel="stylesheet" href="css_assests/style.css">
+    <style>
+      
+      .services-grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:20px;
+        padding:20px;
+        max-width:1100px;
+        margin:auto;
+        list-style:none;
+      }
+      .service-card{
+        background:white;
+        border-radius:12px;
+        box-shadow:0 4px 12px rgba(0,0,0,0.1);
+        overflow:hidden;
+        text-align:center;
+        padding-top:15px;
+      }
+      .service-card h3{margin:10px 0;color:#4a2c2a;}
+      .service-card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+        display:block;
+      }
+      .service-card p{padding:12px;color:#555;font-size:14px;}
+      main h2{text-align:center;}
+    </style>
+</head>
+<body>
+   
+    <header>
+        <img src="_images/JOSBAKERY (1).jpeg" alt="Jo's Bakery Logo" width="150">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <main>
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <h3>Custom Cakes</h3>
+                <img src="_images/custom-cakes.jpg" alt="Custom Cakes">
+                <p>Birthday, wedding and special cakes made to order.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Catering for Events</h3>
+                <img src="_images/catering.jpg" alt="Catering for Events">
+                <p>Sweet tables and catering for all your events.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Daily Fresh Bread</h3>
+                <img src="_images/fresh-bread.jpg" alt="Daily Fresh Bread">
+                <p>Freshly baked every morning, soft and warm.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Delivery Service</h3>
+                <img src="_images/delivery.jpg" alt="Delivery Service">
+                <p>Fast scooter delivery straight to your door.</p>
+            </div>
+
+        </div>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2025 Jo's Bakery. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
